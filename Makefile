@@ -5,6 +5,10 @@ docs:
 	node_modules/.bin/doctoc \
 		./README.md
 
+	node_modules/.bin/jsdoc \
+		--configure ./jsdoc.json \
+		--verbose
+
 
 validate:
 	node_modules/.bin/audit-ci  \
